@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "ab81825a-44db-4dae-a55f-7be225e82ead",
+		"name": "DB Movies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18175916"
+	},
+	"item": [
+		{
+			"name": "allMovie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3002/api/allMovie",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"allMovie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movieDetail",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"movies_name\" : \"Master\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/api/movieDetail",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"movieDetail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addMovie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"movies_name\": \"Master\",\r\n    \"year\": \"2022\",\r\n    \"genre\": \"ACTION\",\r\n    \"rating\": \"9\",\r\n    \"one_line\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae vulputate tellus. Nam fringilla tristique convallis. Sed ac sem orci. Mauris sed augue molestie, ornare leo sit amet, vulputate purus.\",\r\n    \"stars\": \"Kanzul Ulum, Kenzi Arzanka, Shireen Najwa\",\r\n    \"votes\": \"200,597\",\r\n    \"runtime\": \"12345\",\r\n    \"gross\": \"$799,65B\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/api/addMovie",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"addMovie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateMovie",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"movies_name\": \"Master\",\r\n    \"year\": \"2023\",\r\n    \"rating\": \"9,5\",\r\n    \"votes\": \"201,597\",\r\n    \"runtime\": \"144,45\",\r\n    \"gross\": \"$821,65B\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/api/updateMovie",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"updateMovie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteMovie",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"movies_name\" : \"Master\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/api/deleteMovie",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"deleteMovie"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
